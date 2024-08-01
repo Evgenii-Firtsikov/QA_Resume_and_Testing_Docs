@@ -1,0 +1,1319 @@
+{
+	"info": {
+		"_postman_id": "32a90f20-618c-40b0-9647-65e3124567a2",
+		"name": "Читай город",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34335390"
+	},
+	"item": [
+		{
+			"name": "Позитивный сценарий",
+			"item": [
+				{
+					"name": "Открытие главной страницы",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.chitai-gorod.ru",
+							"protocol": "https",
+							"host": [
+								"www",
+								"chitai-gorod",
+								"ru"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавить книги в корзину",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "cookie",
+								"value": "__ddg2_=frNHuXg7DvqgGmwk; __ddg1_=rsiJTZvOMHON0GVKwxH1; refresh-token=; tmr_lvid=74d81cb8264fbc0833690c8373aaa1a4; tmr_lvidTS=1719389150188; _ga=GA1.1.1647524847.1719389151; gdeslon.ru.__arc_domain=gdeslon.ru; gdeslon.ru.user_id=166a7eba-2654-49b7-a58d-05789a219fc7; _ym_uid=1719389153733724939; _ym_d=1719389153; chg_visitor_id=04d7db25-978a-41ba-87e4-6d98abca5886; adrcid=Alhw3QKRsKl7S3eAOsQLI8A; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; stDeIdU=343b977b-cbd2-49ec-9356-dbacebdd543e; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg; _ym_isad=2; adrdel=1720434663083; mindboxDeviceUUID=4b70d807-7215-4672-bd42-3c9238a04dc9; directCrm-session=%7B%22deviceGuid%22%3A%224b70d807-7215-4672-bd42-3c9238a04dc9%22%7D; _ga_LN4Z31QGF4=GS1.1.1720438227.6.1.1720441328.60.0.594150240"
+							},
+							{
+								"key": "origin",
+								"value": "https://www.chitai-gorod.ru"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://www.chitai-gorod.ru/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":3041900}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/cart/product",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cart",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Страница \"Информация о книге\"",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+							},
+							{
+								"key": "cookie",
+								"value": "__ddg2_=frNHuXg7DvqgGmwk; __ddg1_=rsiJTZvOMHON0GVKwxH1; refresh-token=; tmr_lvid=74d81cb8264fbc0833690c8373aaa1a4; tmr_lvidTS=1719389150188; _ga=GA1.1.1647524847.1719389151; gdeslon.ru.__arc_domain=gdeslon.ru; gdeslon.ru.user_id=166a7eba-2654-49b7-a58d-05789a219fc7; _ym_uid=1719389153733724939; _ym_d=1719389153; chg_visitor_id=04d7db25-978a-41ba-87e4-6d98abca5886; adrcid=Alhw3QKRsKl7S3eAOsQLI8A; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; stDeIdU=343b977b-cbd2-49ec-9356-dbacebdd543e; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg; _ym_isad=2; adrdel=1720434663083; mindboxDeviceUUID=4b70d807-7215-4672-bd42-3c9238a04dc9; directCrm-session=%7B%22deviceGuid%22%3A%224b70d807-7215-4672-bd42-3c9238a04dc9%22%7D; _ga_LN4Z31QGF4=GS1.1.1720438227.6.1.1720443312.60.0.594150240"
+							},
+							{
+								"key": "origin",
+								"value": "https://www.chitai-gorod.ru"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://www.chitai-gorod.ru/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/products/slug/vedminy-tropy-3041348",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"products",
+								"slug",
+								"vedminy-tropy-3041348"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавление книги в корзину со страницы \"Информация о книге\"",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "cookie",
+								"value": "__ddg2_=frNHuXg7DvqgGmwk; __ddg1_=rsiJTZvOMHON0GVKwxH1; refresh-token=; tmr_lvid=74d81cb8264fbc0833690c8373aaa1a4; tmr_lvidTS=1719389150188; _ga=GA1.1.1647524847.1719389151; gdeslon.ru.__arc_domain=gdeslon.ru; gdeslon.ru.user_id=166a7eba-2654-49b7-a58d-05789a219fc7; _ym_uid=1719389153733724939; _ym_d=1719389153; chg_visitor_id=04d7db25-978a-41ba-87e4-6d98abca5886; adrcid=Alhw3QKRsKl7S3eAOsQLI8A; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; stDeIdU=343b977b-cbd2-49ec-9356-dbacebdd543e; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg; _ym_isad=2; adrdel=1720434663083; mindboxDeviceUUID=4b70d807-7215-4672-bd42-3c9238a04dc9; directCrm-session=%7B%22deviceGuid%22%3A%224b70d807-7215-4672-bd42-3c9238a04dc9%22%7D; _ga_LN4Z31QGF4=GS1.1.1720438227.6.1.1720443616.60.0.594150240"
+							},
+							{
+								"key": "origin",
+								"value": "https://www.chitai-gorod.ru"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://www.chitai-gorod.ru/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":3041348}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/cart/product",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cart",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Перейти в корзину",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+							},
+							{
+								"key": "cookie",
+								"value": "__ddg2_=frNHuXg7DvqgGmwk; __ddg1_=rsiJTZvOMHON0GVKwxH1; refresh-token=; tmr_lvid=74d81cb8264fbc0833690c8373aaa1a4; tmr_lvidTS=1719389150188; _ga=GA1.1.1647524847.1719389151; gdeslon.ru.__arc_domain=gdeslon.ru; gdeslon.ru.user_id=166a7eba-2654-49b7-a58d-05789a219fc7; _ym_uid=1719389153733724939; _ym_d=1719389153; chg_visitor_id=04d7db25-978a-41ba-87e4-6d98abca5886; adrcid=Alhw3QKRsKl7S3eAOsQLI8A; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; stDeIdU=343b977b-cbd2-49ec-9356-dbacebdd543e; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg; _ym_isad=2; adrdel=1720434663083; mindboxDeviceUUID=4b70d807-7215-4672-bd42-3c9238a04dc9; directCrm-session=%7B%22deviceGuid%22%3A%224b70d807-7215-4672-bd42-3c9238a04dc9%22%7D; _ga_LN4Z31QGF4=GS1.1.1720438227.6.1.1720442092.27.0.594150240"
+							},
+							{
+								"key": "origin",
+								"value": "https://www.chitai-gorod.ru"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://www.chitai-gorod.ru/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/cart",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавить  1 копию книги",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "cookie",
+								"value": "__ddg2_=frNHuXg7DvqgGmwk; __ddg1_=rsiJTZvOMHON0GVKwxH1; refresh-token=; tmr_lvid=74d81cb8264fbc0833690c8373aaa1a4; tmr_lvidTS=1719389150188; _ga=GA1.1.1647524847.1719389151; gdeslon.ru.__arc_domain=gdeslon.ru; gdeslon.ru.user_id=166a7eba-2654-49b7-a58d-05789a219fc7; _ym_uid=1719389153733724939; _ym_d=1719389153; chg_visitor_id=04d7db25-978a-41ba-87e4-6d98abca5886; adrcid=Alhw3QKRsKl7S3eAOsQLI8A; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; stDeIdU=343b977b-cbd2-49ec-9356-dbacebdd543e; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg; _ym_isad=2; adrdel=1720502231079; mindboxDeviceUUID=4b70d807-7215-4672-bd42-3c9238a04dc9; directCrm-session=%7B%22deviceGuid%22%3A%224b70d807-7215-4672-bd42-3c9238a04dc9%22%7D; _ga_LN4Z31QGF4=GS1.1.1720502228.7.1.1720504182.8.0.1364955946"
+							},
+							{
+								"key": "origin",
+								"value": "https://www.chitai-gorod.ru"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://www.chitai-gorod.ru/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\"id\":133158674,\"quantity\":2}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/cart",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cart"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Негативный сценарий",
+			"item": [
+				{
+					"name": "Добавить книгу с идентичным ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "cookie",
+								"value": "__ddg2_=frNHuXg7DvqgGmwk; __ddg1_=rsiJTZvOMHON0GVKwxH1; refresh-token=; tmr_lvid=74d81cb8264fbc0833690c8373aaa1a4; tmr_lvidTS=1719389150188; _ga=GA1.1.1647524847.1719389151; gdeslon.ru.__arc_domain=gdeslon.ru; gdeslon.ru.user_id=166a7eba-2654-49b7-a58d-05789a219fc7; _ym_uid=1719389153733724939; _ym_d=1719389153; chg_visitor_id=04d7db25-978a-41ba-87e4-6d98abca5886; adrcid=Alhw3QKRsKl7S3eAOsQLI8A; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; stDeIdU=343b977b-cbd2-49ec-9356-dbacebdd543e; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg; _ym_isad=2; adrdel=1720434663083; mindboxDeviceUUID=4b70d807-7215-4672-bd42-3c9238a04dc9; directCrm-session=%7B%22deviceGuid%22%3A%224b70d807-7215-4672-bd42-3c9238a04dc9%22%7D; _ga_LN4Z31QGF4=GS1.1.1720438227.6.1.1720441328.60.0.594150240"
+							},
+							{
+								"key": "origin",
+								"value": "https://www.chitai-gorod.ru"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://www.chitai-gorod.ru/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":3041900}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/cart/product",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cart",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавить книгу с невалидным ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "cookie",
+								"value": "__ddg2_=frNHuXg7DvqgGmwk; __ddg1_=rsiJTZvOMHON0GVKwxH1; refresh-token=; tmr_lvid=74d81cb8264fbc0833690c8373aaa1a4; tmr_lvidTS=1719389150188; _ga=GA1.1.1647524847.1719389151; gdeslon.ru.__arc_domain=gdeslon.ru; gdeslon.ru.user_id=166a7eba-2654-49b7-a58d-05789a219fc7; _ym_uid=1719389153733724939; _ym_d=1719389153; chg_visitor_id=04d7db25-978a-41ba-87e4-6d98abca5886; adrcid=Alhw3QKRsKl7S3eAOsQLI8A; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; stDeIdU=343b977b-cbd2-49ec-9356-dbacebdd543e; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg; _ym_isad=2; adrdel=1720434663083; mindboxDeviceUUID=4b70d807-7215-4672-bd42-3c9238a04dc9; directCrm-session=%7B%22deviceGuid%22%3A%224b70d807-7215-4672-bd42-3c9238a04dc9%22%7D; _ga_LN4Z31QGF4=GS1.1.1720438227.6.1.1720441328.60.0.594150240"
+							},
+							{
+								"key": "origin",
+								"value": "https://www.chitai-gorod.ru"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://www.chitai-gorod.ru/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":hhhhhhh}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/cart/product",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cart",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавить книгу с пустым ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "cookie",
+								"value": "__ddg2_=frNHuXg7DvqgGmwk; __ddg1_=rsiJTZvOMHON0GVKwxH1; refresh-token=; tmr_lvid=74d81cb8264fbc0833690c8373aaa1a4; tmr_lvidTS=1719389150188; _ga=GA1.1.1647524847.1719389151; gdeslon.ru.__arc_domain=gdeslon.ru; gdeslon.ru.user_id=166a7eba-2654-49b7-a58d-05789a219fc7; _ym_uid=1719389153733724939; _ym_d=1719389153; chg_visitor_id=04d7db25-978a-41ba-87e4-6d98abca5886; adrcid=Alhw3QKRsKl7S3eAOsQLI8A; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; stDeIdU=343b977b-cbd2-49ec-9356-dbacebdd543e; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg; _ym_isad=2; adrdel=1720434663083; mindboxDeviceUUID=4b70d807-7215-4672-bd42-3c9238a04dc9; directCrm-session=%7B%22deviceGuid%22%3A%224b70d807-7215-4672-bd42-3c9238a04dc9%22%7D; _ga_LN4Z31QGF4=GS1.1.1720438227.6.1.1720441328.60.0.594150240"
+							},
+							{
+								"key": "origin",
+								"value": "https://www.chitai-gorod.ru"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://www.chitai-gorod.ru/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/cart/product",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cart",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавить книгу с длиным ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 500\", function () {\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "cookie",
+								"value": "__ddg2_=frNHuXg7DvqgGmwk; __ddg1_=rsiJTZvOMHON0GVKwxH1; refresh-token=; tmr_lvid=74d81cb8264fbc0833690c8373aaa1a4; tmr_lvidTS=1719389150188; _ga=GA1.1.1647524847.1719389151; gdeslon.ru.__arc_domain=gdeslon.ru; gdeslon.ru.user_id=166a7eba-2654-49b7-a58d-05789a219fc7; _ym_uid=1719389153733724939; _ym_d=1719389153; chg_visitor_id=04d7db25-978a-41ba-87e4-6d98abca5886; adrcid=Alhw3QKRsKl7S3eAOsQLI8A; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; stDeIdU=343b977b-cbd2-49ec-9356-dbacebdd543e; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg; _ym_isad=2; adrdel=1720434663083; mindboxDeviceUUID=4b70d807-7215-4672-bd42-3c9238a04dc9; directCrm-session=%7B%22deviceGuid%22%3A%224b70d807-7215-4672-bd42-3c9238a04dc9%22%7D; _ga_LN4Z31QGF4=GS1.1.1720438227.6.1.1720441328.60.0.594150240"
+							},
+							{
+								"key": "origin",
+								"value": "https://www.chitai-gorod.ru"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://www.chitai-gorod.ru/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":30419000000}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/cart/product",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cart",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "В корзине добавить 200 копий",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "cookie",
+								"value": "__ddg2_=frNHuXg7DvqgGmwk; __ddg1_=rsiJTZvOMHON0GVKwxH1; refresh-token=; tmr_lvid=74d81cb8264fbc0833690c8373aaa1a4; tmr_lvidTS=1719389150188; _ga=GA1.1.1647524847.1719389151; gdeslon.ru.__arc_domain=gdeslon.ru; gdeslon.ru.user_id=166a7eba-2654-49b7-a58d-05789a219fc7; _ym_uid=1719389153733724939; _ym_d=1719389153; chg_visitor_id=04d7db25-978a-41ba-87e4-6d98abca5886; adrcid=Alhw3QKRsKl7S3eAOsQLI8A; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; stDeIdU=343b977b-cbd2-49ec-9356-dbacebdd543e; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg; _ym_isad=2; adrdel=1720434663083; mindboxDeviceUUID=4b70d807-7215-4672-bd42-3c9238a04dc9; directCrm-session=%7B%22deviceGuid%22%3A%224b70d807-7215-4672-bd42-3c9238a04dc9%22%7D; _ga_LN4Z31QGF4=GS1.1.1720438227.6.1.1720446112.60.0.594150240"
+							},
+							{
+								"key": "origin",
+								"value": "https://www.chitai-gorod.ru"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://www.chitai-gorod.ru/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\"id\":133158674,\"quantity\":200}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/cart",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Удалить книги из корзины",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+							},
+							{
+								"key": "cookie",
+								"value": "__ddg2_=frNHuXg7DvqgGmwk; __ddg1_=rsiJTZvOMHON0GVKwxH1; refresh-token=; tmr_lvid=74d81cb8264fbc0833690c8373aaa1a4; tmr_lvidTS=1719389150188; _ga=GA1.1.1647524847.1719389151; gdeslon.ru.__arc_domain=gdeslon.ru; gdeslon.ru.user_id=166a7eba-2654-49b7-a58d-05789a219fc7; _ym_uid=1719389153733724939; _ym_d=1719389153; chg_visitor_id=04d7db25-978a-41ba-87e4-6d98abca5886; adrcid=Alhw3QKRsKl7S3eAOsQLI8A; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; stDeIdU=343b977b-cbd2-49ec-9356-dbacebdd543e; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA2MDI2NTksImlhdCI6MTcyMDQzNDY1OSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjgyNjhjMTdkOTk2ODA1MmE5NDVkZGY0NmJlOWJmOWE4YjcyMDBmZDU5NzljZTkxOWJjNzA1Y2ZiM2ZlM2VkNjQiLCJ0eXBlIjoxMH0.YYVriLstyn0f40uBwWr-id4FU0hwW1A9Crg4OdkQLwg; _ym_isad=2; adrdel=1720434663083; mindboxDeviceUUID=4b70d807-7215-4672-bd42-3c9238a04dc9; directCrm-session=%7B%22deviceGuid%22%3A%224b70d807-7215-4672-bd42-3c9238a04dc9%22%7D; _ga_LN4Z31QGF4=GS1.1.1720438227.6.1.1720447091.22.0.594150240"
+							},
+							{
+								"key": "origin",
+								"value": "https://www.chitai-gorod.ru"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://www.chitai-gorod.ru/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/cart",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cart"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "https://web-gate.chitai-gorod.ru/api/v1",
+			"type": "string"
+		},
+		{
+			"key": "Token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA5NDAyNDUsImlhdCI6MTcyMDc3MjI0NSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6ImNhMjA4NGEzMjkxMDU2NjIwZWIwYmYyMmFhYzBlYzBjMTRiNTBlNzA5MTVkNTQ1NmQ3ODRhNThhMjEyYjBjMjMiLCJ0eXBlIjoxMH0.ugqBjNBVJJ__Js6irBTMJIpvqKpAtl0ofMNqtoREmTk",
+			"type": "string"
+		}
+	]
+}
