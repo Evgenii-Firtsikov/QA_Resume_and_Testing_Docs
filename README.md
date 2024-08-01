@@ -1,5 +1,5 @@
 ## **Продукт “Портал учителя” SkyEng**
-### - [Тест план]
+### - [Тест план](https://github.com/Evgenii-Firtsikov/QA_Resume_and_Testing_Docs/blob/main/Testing_Docs/%D0%A2%D0%B5%D1%81%D1%82%20%D0%BF%D0%BB%D0%B0%D0%BD.pdf)
 ### - [Тестирование документации]
 ### - [Декомпозиция продукта]
 ### - [Тест-кейсы smoke тестирования]
