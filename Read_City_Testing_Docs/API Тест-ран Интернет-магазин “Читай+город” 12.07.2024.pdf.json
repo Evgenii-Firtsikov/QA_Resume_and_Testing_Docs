@@ -1,0 +1,394 @@
+{
+	"id": "e7a79416-57cb-45de-99cd-2f33714069a5",
+	"name": "Читай город",
+	"timestamp": "2024-07-12T09:10:30.459Z",
+	"collection_id": "34335390-32a90f20-618c-40b0-9647-65e3124567a2",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-12T09:10:23.605Z",
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "925d9400-055d-4f25-8258-69e2c1f0a9e7",
+			"name": "Открытие главной страницы",
+			"url": "https://www.chitai-gorod.ru",
+			"time": 1301,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1301
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "26a63206-231a-42b5-b2ef-dd434e6a7353",
+			"name": "Добавить книги в корзину",
+			"url": "https://web-gate.chitai-gorod.ru/api/v1/cart/product",
+			"time": 574,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				574
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e16905fc-e403-496c-b9e3-a8ebb177d5db",
+			"name": "Страница \"Информация о книге\"",
+			"url": "https://web-gate.chitai-gorod.ru/api/v1/products/slug/vedminy-tropy-3041348",
+			"time": 439,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				439
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9f79bec5-05a0-4075-9ef8-64f415753786",
+			"name": "Добавление книги в корзину со страницы \"Информация о книге\"",
+			"url": "https://web-gate.chitai-gorod.ru/api/v1/cart/product",
+			"time": 246,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				246
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5e91731b-bf8b-4a9f-9630-5afa51726ab5",
+			"name": "Перейти в корзину",
+			"url": "https://web-gate.chitai-gorod.ru/api/v1/cart",
+			"time": 472,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				472
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "6d3977de-ae12-4900-9738-0679962b2f57",
+			"name": "Добавить  1 копию книги",
+			"url": "https://web-gate.chitai-gorod.ru/api/v1/cart",
+			"time": 654,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				654
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "568fd176-6ad8-46dd-9c9d-efb6bcb9c649",
+			"name": "Добавить книгу с идентичным ID",
+			"url": "https://web-gate.chitai-gorod.ru/api/v1/cart/product",
+			"time": 253,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 400": false
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				253
+			],
+			"allTests": [
+				{
+					"Status code is 400": false
+				}
+			]
+		},
+		{
+			"id": "80f4070e-2701-4dfc-ab0a-db94bb741671",
+			"name": "Добавить книгу с невалидным ID",
+			"url": "https://web-gate.chitai-gorod.ru/api/v1/cart/product",
+			"time": 132,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				132
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			]
+		},
+		{
+			"id": "df5449f3-1b60-404c-9bf5-f6cc8ae2c574",
+			"name": "Добавить книгу с пустым ID",
+			"url": "https://web-gate.chitai-gorod.ru/api/v1/cart/product",
+			"time": 160,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			]
+		},
+		{
+			"id": "578a0bdf-e793-48a3-b717-b0a03c03c3b3",
+			"name": "Добавить книгу с длиным ID",
+			"url": "https://web-gate.chitai-gorod.ru/api/v1/cart/product",
+			"time": 220,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 500": true
+			},
+			"testPassFailCounts": {
+				"Status code is 500": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				220
+			],
+			"allTests": [
+				{
+					"Status code is 500": true
+				}
+			]
+		},
+		{
+			"id": "26914a46-7aa5-47fe-8b46-51c4e35ab92b",
+			"name": "В корзине добавить 200 копий",
+			"url": "https://web-gate.chitai-gorod.ru/api/v1/cart",
+			"time": 565,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 400": false
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				565
+			],
+			"allTests": [
+				{
+					"Status code is 400": false
+				}
+			]
+		},
+		{
+			"id": "92a34c94-4a63-46ef-a9fa-0a2a3d5a75d3",
+			"name": "Удалить книги из корзины",
+			"url": "https://web-gate.chitai-gorod.ru/api/v1/cart",
+			"time": 334,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				334
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5350,
+	"collection": {
+		"requests": [
+			{
+				"id": "925d9400-055d-4f25-8258-69e2c1f0a9e7",
+				"method": "GET"
+			},
+			{
+				"id": "26a63206-231a-42b5-b2ef-dd434e6a7353",
+				"method": "POST"
+			},
+			{
+				"id": "e16905fc-e403-496c-b9e3-a8ebb177d5db",
+				"method": "GET"
+			},
+			{
+				"id": "9f79bec5-05a0-4075-9ef8-64f415753786",
+				"method": "POST"
+			},
+			{
+				"id": "5e91731b-bf8b-4a9f-9630-5afa51726ab5",
+				"method": "GET"
+			},
+			{
+				"id": "6d3977de-ae12-4900-9738-0679962b2f57",
+				"method": "PUT"
+			},
+			{
+				"id": "568fd176-6ad8-46dd-9c9d-efb6bcb9c649",
+				"method": "POST"
+			},
+			{
+				"id": "80f4070e-2701-4dfc-ab0a-db94bb741671",
+				"method": "POST"
+			},
+			{
+				"id": "df5449f3-1b60-404c-9bf5-f6cc8ae2c574",
+				"method": "POST"
+			},
+			{
+				"id": "578a0bdf-e793-48a3-b717-b0a03c03c3b3",
+				"method": "POST"
+			},
+			{
+				"id": "26914a46-7aa5-47fe-8b46-51c4e35ab92b",
+				"method": "PUT"
+			},
+			{
+				"id": "92a34c94-4a63-46ef-a9fa-0a2a3d5a75d3",
+				"method": "DELETE"
+			}
+		]
+	}
+}
