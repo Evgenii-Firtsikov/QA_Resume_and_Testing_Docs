@@ -17,13 +17,13 @@
 ### - [Отчет о тестировании](https://github.com/Evgenii-Firtsikov/QA_Resume_and_Testing_Docs/blob/main/Testing_Docs/%D0%A2%D0%B5%D1%81%D1%82%20%D0%BE%D1%82%D1%87%D0%B5%D1%82.pdf)
 
 ## **Интернет-магазин “Читай город”**
-### - [Тест план]
-### - [Тест-кейсы smoke тестирования]
-### - [Тест-кейсы функционального тестирования]
-### - [Тест-кейсы нефункционального тестирования]
-### - [Тест-кейсы API тестирования]
-### - [Коллекция Postman]
-### - [Тест-ран Smoke, Функциональное и нефункциональное тестирование]
-### - [Тест-ран API тестирование]
-### - [Баг-репорты]
-### - [Отчет о тестировании]
+### - [Тест план](https://github.com/Evgenii-Firtsikov/QA_Resume_and_Testing_Docs/blob/main/Read_City_Testing_Docs/%D0%A2%D0%B5%D1%81%D1%82%20%D0%BF%D0%BB%D0%B0%D0%BD.pdf)
+### - [Тест-кейсы smoke тестирования](https://github.com/Evgenii-Firtsikov/QA_Resume_and_Testing_Docs/blob/main/Read_City_Testing_Docs/%D0%A2%D0%B5%D1%81%D1%82-%D0%BA%D0%B5%D0%B9%D1%81%D1%8B%20Smoke%20%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F.pdf)
+### - [Тест-кейсы функционального тестирования](https://github.com/Evgenii-Firtsikov/QA_Resume_and_Testing_Docs/blob/main/Read_City_Testing_Docs/%D0%A2%D0%B5%D1%81%D1%82-%D0%BA%D0%B5%D0%B9%D1%81%D1%8B%20%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F.pdf)
+### - [Тест-кейсы нефункционального тестирования](https://github.com/Evgenii-Firtsikov/QA_Resume_and_Testing_Docs/blob/main/Read_City_Testing_Docs/%D0%A2%D0%B5%D1%81%D1%82-%D0%BA%D0%B5%D0%B9%D1%81%D1%8B%20%D0%9D%D0%B5%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F.pdf)
+### - [Тест-кейсы API тестирования](https://github.com/Evgenii-Firtsikov/QA_Resume_and_Testing_Docs/blob/main/Read_City_Testing_Docs/API%20%D0%A2%D0%B5%D1%81%D1%82-%D0%BA%D0%B9%D1%81%D1%8B.pdf)
+### - [Коллекция Postman](https://github.com/Evgenii-Firtsikov/QA_Resume_and_Testing_Docs/blob/main/Read_City_Testing_Docs/%D0%A7%D0%B8%D1%82%D0%B0%D0%B9%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4.postman_collection.json)
+### - [Тест-ран Smoke, Функциональное и нефункциональное тестирование](https://github.com/Evgenii-Firtsikov/QA_Resume_and_Testing_Docs/blob/main/Read_City_Testing_Docs/%D0%A2%D0%B5%D1%81%D1%82-%D1%80%D0%B0%D0%BD%20Smoke%2C%20%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%B8%20%D0%BD%D0%B5%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5.pdf)
+### - [Тест-ран API тестирование](https://github.com/Evgenii-Firtsikov/QA_Resume_and_Testing_Docs/blob/main/Read_City_Testing_Docs/API%20%D0%A2%D0%B5%D1%81%D1%82-%D1%80%D0%B0%D0%BD%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%20%E2%80%9C%D0%A7%D0%B8%D1%82%D0%B0%D0%B9%2B%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%E2%80%9D%2012.07.2024.pdf.json)
+### - [Баг-репорты](https://github.com/Evgenii-Firtsikov/QA_Resume_and_Testing_Docs/blob/main/Read_City_Testing_Docs/%D0%91%D0%B0%D0%B3%20%D1%80%D0%B5%D0%BF%D0%BE%D1%80%D1%82.pdf)
+### - [Отчет о тестировании](https://github.com/Evgenii-Firtsikov/QA_Resume_and_Testing_Docs/blob/main/Read_City_Testing_Docs/%D0%9E%D1%82%D1%87%D0%B5%D1%82%20%D0%BE%20%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%20%E2%80%9C%D0%A7%D0%B8%D1%82%D0%B0%D0%B9%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%E2%80%9D-010824-064402.pdf)
